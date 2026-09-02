@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachi | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/HachiLogo.png">
+</head>
+
+<body>
+    <!-- ================================================================= -->
+    <!-- Header -->
+    <header>
+        <img class="logoHeader" src="assets/HachiLogo.png" alt="Hachi Logo">
+        <div class="header-direita">
+            <a href="Home">Home</a>
+            <a href="QuemSomos">Quem Somos</a>
+            <a href="cardapio">Cardápio</a>
+            <img src="assets/Icons/carrinho-de-compras-de-design-xadrez.png" alt="carrinho">
+            <button>Login</button>
+        </div>
+    </header>
+    <!-- ================================================================= -->
+    <div class="cadastroBody">
+        <img class="logoBody" src="assets/HachiLogo.png" alt="Hachi Logo">
+        <h1>Hachi</h1>
+        <h2>Crepe & Taiyaki</h2>
+        <div class="selecaoTela">
+            <button class="selectCadastro selectActivate">Cadastro</button>
+            <button class="selectLogin" onclick="window.location.href='/login.html'">Login</button>
+        </div>
+
+        <div class="cardCadastro">
+            <h1>Criar Conta</h1>
+            <h2>Junte-se à família Kachi e ganhe vantagens exclusivas</h2>
+
+            <form class="formCadastro" action="cadastro.html" method="post">
+                <h4>Nome completo</h4>
+                <input class="cadastroInputs" type="text" name="nome" placeholder="Nome Completo">
+                <h4>Email <b>*</b></h4>
+                <input class="cadastroInputs" type="email" name="email" placeholder="Email" required>
+                <h4>Senha <b>*</b></h4>
+                <input class="cadastroInputs" type="password" name="senha" placeholder="Senha" required>
+                <h4>Confirmar Senha <b>*</b></h4>
+                <input class="cadastroInputs" type="password" name="confirmarSenha" placeholder="Confirmar Senha"
+                    required>
+                <div class="usuarioTermos">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Li e aceito os <a href="termos.html" target="_blank">Termos de Uso e Privacidade</a></label>
+                </div>
+                <div class="usuarioTermos">
+                    <input type="checkbox" id="ofertas">
+                    <label for="ofertas">Quero receber ofertas e novidades por e-mail</label>
+                </div>
+                <button type="submit">Criar Minha Conta</button>
+            </form>
+            <div class="cadastroDivisao">
+                <hr>
+                <span>ou</span>
+                <hr>
+            </div>
+            <h6 class="jaTemConta">Já tem uma Conta? <a href="login.html">Login</a></h6>
+        </div>
+    </div>
+</body>
+
+</html>

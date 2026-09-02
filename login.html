@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachi | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/HachiLogo.png">
+</head>
+
+<body>
+    <!-- ================================================================= -->
+    <!-- Header -->
+    <header>
+        <img class="logoHeader" src="assets/HachiLogo.png" alt="Hachi Logo">
+        <div class="header-direita">
+            <a href="Home">Home</a>
+            <a href="QuemSomos">Quem Somos</a>
+            <a href="cardapio">Cardápio</a>
+            <img src="assets/Icons/carrinho-de-compras-de-design-xadrez.png" alt="carrinho">
+            <button>Login</button>
+        </div>
+    </header>
+    <!-- ================================================================= -->
+    <div class="cadastroBody">
+        <img class="logoBody" src="assets/HachiLogo.png" alt="Hachi Logo">
+        <h1>Hachi</h1>
+        <h2>Crepe & Taiyaki</h2>
+        <div class="selecaoTela">
+            <button class="selectCadastro" onclick="window.location.href='/cadastro.html'">Cadastro</button>
+            <button class="selectLogin selectActivate">Login</button>
+        </div>
+
+        <div class="cardCadastro">
+            <h1>Entrar</h1>
+            <h2>Acesse sua conta e continue pedindo</h2>
+
+            <form class="formCadastro" action="cadastro.html" method="post">
+                <h4>Email <b>*</b></h4>
+                <input class="cadastroInputs" type="email" name="email" placeholder="Email" required>
+                <h4>Senha <b>*</b></h4>
+                <input class="cadastroInputs" type="password" name="senha" placeholder="Senha" required>
+                <a href="cadastro.html" class="esqueceuSenha">Esqueceu sua Senha?</a>
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="cadastroDivisao">
+                <hr>
+                <span>ou</span>
+                <hr>
+            </div>
+            <h6 class="jaTemConta">Não tem uma Conta? <a href="cadastro.html">Cadastre-se</a></h6>
+        </div>
+    </div>
+</body>
+
+</html>

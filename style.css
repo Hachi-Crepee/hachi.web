@@ -1,0 +1,346 @@
+/* Google Fonts */
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+/* Todas as Fontes: Open Sans, Pixelify Sans, Roboto Slab, Roboto, Tiny5 */
+/* ================================================ */
+
+body {
+    margin: 0;
+}
+
+/* ================================================ */
+/* Header */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    background-color: #131313;
+}
+
+.logoHeader {
+    cursor: pointer;
+}
+
+.header-direita {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.header-direita a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.header-direita a:hover {
+    color: #FC4E12;
+    transform: scale(1.05);
+}
+
+.header-direita img {
+    width: 50px;
+    filter: invert(100%);
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.header-direita img:hover {
+    transform: scale(1.05);
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(10deg);
+}
+
+.header-direita button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: #FC4E12;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.header-direita button:hover {
+    background-color: #db4311;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ================================================ */
+/* Cadastro */
+
+.cadastroBody {
+    min-height: 85vh;
+    background: linear-gradient(to bottom, #FFEADB, #FBF3ED);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.logoBody {
+    width: 150px;
+}
+
+.cadastroBody h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #492308;
+    margin: 20px 0 0 0;
+}
+
+.cadastroBody h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #492308;
+    margin: 0px 0 20px 0;
+}
+
+.selecaoTela {
+    display: flex;
+    background-color: #fff;
+    gap: 10px;
+
+    padding: 6px 8px;
+    border-radius: 22px;
+    margin-bottom: 20px;
+}
+
+.selectCadastro, .selectLogin {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #9C7B6B;
+    background-color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 18px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.selectCadastro:hover, .selectLogin:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.selectActivate {
+    background-color: #492308;
+    color: #fff;
+
+    transition: all 0.3s ease;
+}
+
+.selectActivate:hover {
+    background-color: #492308;
+    color: #f0f0f0;
+}
+
+/* Card do Cadastro */
+
+.cardCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+    min-width: 50vh;
+
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+    padding: 30px 20px;
+}
+
+.cardCadastro h1 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.cardCadastro h2 {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 60%;
+    text-align: center;
+    color: #492308;
+    margin: 0px 0 20px 0;
+}
+
+.cardCadastro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items:  start !important;
+    width: 100%;
+}
+
+.formCadastro h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #492308;
+    margin: 0px;
+}
+
+.formCadastro h4 b {
+    color: red;
+}
+
+.cadastroInputs {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #492308;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 90%;
+
+    transition: all 0.3s ease;
+}
+
+.cadastroInputs:focus {
+    outline: none;
+    border-color: #FC4E12;
+    box-shadow: 0 0 5px rgba(252, 78, 18, 0.5);
+}
+
+.usuarioTermos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuarioTermos input[type="checkbox"] {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #FC4E12;      /* Borda Laranja */
+    accent-color: #FC4E12;          /* Cor do preenchimento/símbolo quando marcado */
+    
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.usuarioTermos label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #492308;
+}
+
+.usuarioTermos a {
+    color: #FC4E12;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.usuarioTermos a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.formCadastro button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    color: black;
+    background: linear-gradient(to right, #FC4E12, #FF7F50);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.formCadastro button:hover {
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.cadastroDivisao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cadastroDivisao hr {
+    width: 100%;
+    border: none;
+    height: 0.5px;
+    background-color: #4923082b;
+}
+
+.cadastroDivisao span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 400;
+    color: #492308a0;
+}
+
+.jaTemConta {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #492308a0;
+    margin: 0px;
+}
+
+.jaTemConta a {
+    color: #FC4E12;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.jaTemConta a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.esqueceuSenha {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: #FC4E12;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.esqueceuSenha:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}

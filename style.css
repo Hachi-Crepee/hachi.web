@@ -85,7 +85,7 @@ header {
 .cadastroBody {
     min-height: 85vh;
     background: linear-gradient(to bottom, #FFEADB, #FBF3ED);
-
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,4 +343,23 @@ header {
 .esqueceuSenha:hover {
     text-decoration: underline;
     font-weight: 600;
+}
+
+#mensagem {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #FF7F50;
+    justify-content: space-between;
+    position: fixed;
+    top: 5%;
+    width: 25vw;
+    right: 2%;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+#mensagem .titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
 }

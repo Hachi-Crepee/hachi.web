@@ -12,7 +12,7 @@
 <body>
 <!-- ================================================================= -->
 <!-- Header -->
-<header>
+<!-- <header>
     <img class="logoHeader" src="assets/HachiLogo.png" alt="Hachi Logo">
     <div class="header-direita">
         <a href="Home">Home</a>
@@ -21,32 +21,38 @@
         <img src="assets/Icons/carrinho-de-compras-de-design-xadrez.png" alt="carrinho">
         <button>Login</button>
     </div>
-</header>
+</header> -->
 <!-- ================================================================= -->
 <div class="cadastroBody">
     <img class="logoBody" src="assets/HachiLogo.png" alt="Hachi Logo">
-    <h1>Hachi</h1>
-    <h2>Crepe & Taiyaki</h2>
-    <div class="selecaoTela">
+    <!-- <h1>Hachi</h1>
+    <h2>Crepe & Taiyaki</h2> -->
+    <!-- <div class="selecaoTela">
         <button class="selectCadastro selectActivate">Cadastro</button>
         <button class="selectLogin" onclick="window.location.href='/login.html'">Login</button>
-    </div>
+    </div> -->
 
     <div class="cardCadastro">
         <h1>Criar Conta</h1>
-        <h2>Junte-se à família Kachi e ganhe vantagens exclusivas</h2>
+        <h2>Junte-se à família Hachi e ganhe vantagens exclusivas</h2>
 
         <form class="formCadastro" action="cadastro.html" method="post" id="form">
-            <h4>Nome completo</h4>
-            <input class="cadastroInputs" type="text" name="nome" id="nomeCompleto" placeholder="Nome Completo">
-            <h4>Email <b>*</b></h4>
-            <input class="cadastroInputs" type="email" name="email" id="email" placeholder="Email" required>
-            <h4>Senha <b>*</b></h4>
-            <input class="cadastroInputs" type="password" name="senha" id="senha" placeholder="Senha" required>
-            <h4>Confirmar Senha <b>*</b></h4>
-            <input class="cadastroInputs" type="password" name="confirmarSenha" id="confirmarSenha"
-                   placeholder="Confirmar Senha"
-                   required>
+            <div class="formulario"> 
+                <div>
+                    <h4>Nome completo</h4>
+                    <input class="cadastroInputs" type="text" name="nome" id="nomeCompleto" placeholder="Nome Completo">
+                    <h4>Email <b>*</b></h4>
+                    <input class="cadastroInputs" type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="senhas">
+                    <h4>Senha <b>*</b></h4>
+                    <input class="cadastroInputs" type="password" name="senha" id="senha" placeholder="Senha" required>
+                    <h4>Confirmar Senha <b>*</b></h4>
+                    <input class="cadastroInputs" type="password" name="confirmarSenha" id="confirmarSenha"
+                        placeholder="Confirmar Senha"
+                        required>
+                </div>
+            </div>
             <div class="usuarioTermos">
                 <input type="checkbox" id="termos">
                 <label for="termos">Li e aceito os <a href="termos.html" target="_blank">Termos de Uso e Privacidade</a></label>

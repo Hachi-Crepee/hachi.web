@@ -8,92 +8,21 @@ body {
     margin: 0;
 }
 
-/* ================================================ */
-/* Header */
-header {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-
-    background-color: #131313;
-}
-
-.logoHeader {
-    cursor: pointer;
-}
-
-.header-direita {
-    display: flex;
-    align-items: center;
-
-    gap: 20px;
-}
-
-
-.header-direita a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-.header-direita a:hover {
-    color: #FC4E12;
-    transform: scale(1.05);
-}
-
-.header-direita img {
-    width: 50px;
-    filter: invert(100%);
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-.header-direita img:hover {
-    transform: scale(1.05);
-    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(10deg);
-}
-
-.header-direita button {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-    background-color: #FC4E12;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 4px;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-.header-direita button:hover {
-    background-color: #db4311;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* ================================================ */
-/* Cadastro */
-
 .cadastroBody {
-    min-height: 85vh;
-    background: linear-gradient(to bottom, #FFEADB, #FBF3ED);
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #ffbd59, white);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    justify-content: center;
+    padding: 25px 20px;
 }
 
 .logoBody {
     width: 150px;
+    margin-bottom: 10px;
 }
 
 .cadastroBody h1 {
@@ -101,7 +30,7 @@ header {
     font-size: 36px;
     font-weight: 800;
     color: #492308;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .cadastroBody h2 {
@@ -109,17 +38,16 @@ header {
     font-size: 24px;
     font-weight: 400;
     color: #492308;
-    margin: 0px 0 20px 0;
+    margin: 0 0 12px 0;
 }
 
 .selecaoTela {
     display: flex;
     background-color: #fff;
     gap: 10px;
-
     padding: 6px 8px;
     border-radius: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .selectCadastro, .selectLogin {
@@ -153,20 +81,15 @@ header {
     color: #f0f0f0;
 }
 
-/* Card do Cadastro */
-
 .cardCadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
-
-    min-width: 50vh;
-
+    box-sizing: border-box;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
-    padding: 30px 20px;
+    padding: 25px 20px;
 }
 
 .cardCadastro h1 {
@@ -177,7 +100,7 @@ header {
     font-family: "Roboto Slab", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    max-width: 60%;
+    max-width: 70%;
     text-align: center;
     color: #492308;
     margin: 0px 0 20px 0;
@@ -187,7 +110,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
 }
 
 .formCadastro {
@@ -236,9 +159,9 @@ header {
 }
 
 .usuarioTermos input[type="checkbox"] {
-    background-color: transparent; /* Fundo transparente */
-    border: 2px solid #FC4E12;      /* Borda Laranja */
-    accent-color: #FC4E12;          /* Cor do preenchimento/símbolo quando marcado */
+    background-color: transparent; 
+    border: 2px solid #FC4E12;      
+    accent-color: #FC4E12;          
     
     width: 20px;
     height: 20px;
@@ -275,7 +198,6 @@ header {
     padding: 15px 20px;
     border-radius: 12px;
     cursor: pointer;
-
     transition: all 0.4s ease;
 }
 
@@ -318,7 +240,6 @@ header {
 .jaTemConta a {
     color: #FC4E12;
     text-decoration: none;
-
     transition: all 0.3s ease;
 }
 
@@ -333,10 +254,8 @@ header {
     font-weight: 400;
     margin: 0;
     color: #FC4E12;
-
     cursor: pointer;
     text-decoration: none;
-
     transition: all 0.3s ease;
 }
 
@@ -362,4 +281,90 @@ header {
 #mensagem .titulo {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.formulario {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.formulario input {
+    margin-bottom: 10px;
+    width: 220px;
+}
+
+
+@media (max-height: 800px) and (min-width: 600px) {
+
+    .cadastroBody {
+        padding: 15px 20px;
+    }
+
+    .logoBody {
+        width: 100px;
+    }
+
+    .cadastroBody h1 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .cadastroBody h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .selecaoTela {
+        margin-bottom: 8px;
+    }
+
+    .cardCadastro {
+        padding: 18px 20px;
+    }
+
+    .cardCadastro h1 {
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .cardCadastro h2 {
+        margin-bottom: 12px;
+    }
+
+    .cardCadastro form {
+        gap: 10px;
+    }
+
+    .cadastroDivisao {
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cadastroBody {
+        justify-content: flex-start;
+        padding: 25px 15px;
+    }
+
+    .cardCadastro {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .selectCadastro,
+    .selectLogin {
+        padding: 10px 35px;
+    }
+
+    .cadastroBody h1 {
+        font-size: 30px;
+    }
+
+    .cadastroBody h2 {
+        font-size: 20px;
+        text-align: center;
+    }
 }

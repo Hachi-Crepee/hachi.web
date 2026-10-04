@@ -1,2 +1,2 @@
-# front-end
-FrontEnd do Site pro Hachi
+# Hachi Crepe e Café - Projeto de Extensão Universitária
+Repositório responsável pelo desenvolvimento da aplicação web do sistema desenvolvido para o Hachi Crepe e Café.
